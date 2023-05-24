@@ -6,9 +6,9 @@
   "scripts": {
     "lint": "eslint . --ext .ts && prettier --check .",
     "lint:fix": "eslint . --ext .js,.ts --fix && prettier --write .",
-    "build": "tsc && tsc-alias",
+    "build": "if [ -d build ]; then rm -rf build; fi && tsc && tsc-alias",
     "dev": "nodemon --config nodemon.json src/server.ts",
-    "db:reset": "npm run build && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
+    "db:reset": "if [ -d build ]; then rm -rf build; fi && npx -y tsc && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
@@ -43,7 +43,8 @@
     "express": "^4.18.2",
     "helmet": "^7.0.0",
     "morgan": "^1.10.0",
-    "pg-promise": "^11.4.3",
+    "pg": "^8.11.0",
+    "pg-hstore": "^2.3.4",
     "sequelize": "^6.31.1"
   }
 }

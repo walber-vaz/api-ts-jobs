@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 
 class App {
-  public app: Application;
+  public readonly app: Application;
   constructor() {
     this.app = express();
     this.routes();
