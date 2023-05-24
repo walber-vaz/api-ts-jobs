@@ -21,15 +21,17 @@
   <img src="https://img.shields.io/badge/-VSCode-blue?style=rounded&logo=Visual%20Studio%20Code&logoColor=white" />
   <img src="https://img.shields.io/badge/-Linux-black?style=rounded&logo=Linux&logoColor=white" />
   <!-- issues -->
-  <img alt="GitHub issues" src="https://img.shields.io/github/issues/walber-vaz/api-rest-typescript?style=rounded">
+  <img alt="GitHub issues" src="https://img.shields.io/github/issues/walber-vaz/api-ts-jobs?style=rounded">
   <!-- forks -->
-  <img alt="GitHub forks" src="https://img.shields.io/github/forks/walber-vaz/api-rest-typescript?style=rounded">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/walber-vaz/api-ts-jobs?style=rounded">
   <!-- stars -->
-  <img alt="GitHub stars" src="https://img.shields.io/github/stars/walber-vaz/api-rest-typescript?style=rounded">
+  <img alt="GitHub stars" src="https://img.shields.io/github/stars/walber-vaz/api-ts-jobs?style=rounded">
   <!-- license -->
-  <img alt="GitHub" src="https://img.shields.io/github/license/walber-vaz/api-rest-typescript?style=rounded">
+  <img alt="GitHub" src="https://img.shields.io/github/license/walber-vaz/api-ts-jobs?style=rounded">
+  <!-- pr -->
+  <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/walber-vaz/api-ts-jobs?style=rounded">
   <!-- linkedin -->
-  <a href="https://www.linkedin.com/in/walber-vaz/" target="_blank">
+  <a href="https://www.linkedin.com/in/walber-vaz" target="_blank">
     <img alt="Linkedin - Walber Vaz" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=rounded&logo=linkedin">
   </a>
   <!-- github -->
