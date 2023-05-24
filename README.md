@@ -30,6 +30,8 @@
   <img alt="GitHub" src="https://img.shields.io/github/license/walber-vaz/api-ts-jobs?style=rounded">
   <!-- pr -->
   <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/walber-vaz/api-ts-jobs?style=rounded">
+  <!-- last commit -->
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/walber-vaz/api-ts-jobs?style=rounded">
   <!-- linkedin -->
   <a href="https://www.linkedin.com/in/walber-vaz" target="_blank">
     <img alt="Linkedin - Walber Vaz" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=rounded&logo=linkedin">
