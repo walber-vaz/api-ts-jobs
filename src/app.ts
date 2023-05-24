@@ -16,7 +16,7 @@ class App {
     this.middlewares();
   }
 
-  private middlewares(): void {
+  protected middlewares(): void {
     this.app.use(express.json());
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(cors());
@@ -25,7 +25,7 @@ class App {
     this.app.use(compression());
   }
 
-  private routes(): void {
+  protected routes(): void {
     this.app.get('/', (req: Request, res: Response) => {
       res.status(200).json({ message: 'Hello World' });
     });
