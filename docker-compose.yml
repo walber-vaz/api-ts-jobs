@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    user: node
+    container_name: api-jobs-container
+    tty: true
+    stdin_open: true
+    command: npm run dev
+    image: api-jobs-image
+    restart: always
+    working_dir: /app
+    ports:
+      - '3333:3333'
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    environment:
+      DB_USER: postgres
+      DB_PASS: postgres
+      DB_NAME: jobs
+      DB_HOST: db
+      DB_PORT: 5432
+      JWT_SECRET: secret
+
+  db:
+    image: postgres
+    container_name: db-jobs-container
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: jobs
+    ports:
+      - '5432:5432'
+    healthcheck:
+      test: ['CMD', 'pg_isready', '-U', 'postgres']
+      interval: 5s
+      timeout: 5s
+      retries: 5
