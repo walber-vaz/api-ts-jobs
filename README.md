@@ -54,6 +54,7 @@
 * [Pré-requisitos](#pré-requisitos)
 * [Como rodar a aplicação](#como-rodar-a-aplicação)
 * [Tecnologias](#tecnologias)
+* [Fluxo de trabalho](#fluxo-de-trabalho)
 * [Autor](#autor)
 * [Como contribuir](#como-contribuir)
 * [Licença](#licença)
@@ -159,6 +160,17 @@ As seguintes ferramentas foram usadas na construção do projeto:
 * [Git](https://git-scm.com/)
 
 <a id="tecnologias"></a>
+
+<!-- fluxo de trabalho -->
+## :construction_worker: Fluxo de trabalho
+
+:point_up_2: <a href="#tabela-de-conteúdos">Voltar ao menu</a>
+
+### :construction: Branches
+
+* `main` é a branch principal, onde o código é armazenado após ser testado e aprovado em development.
+* `development` é a branch onde o código das features é armazenado após serem feitas e testadas.
+* `feature/nome-da-feature` é a branch onde o código das features é armazenado enquanto estão sendo feitas.
 
 ## :woman_technologist: Autor
 
